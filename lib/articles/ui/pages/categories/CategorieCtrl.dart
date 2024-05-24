@@ -29,9 +29,8 @@ class CategorieCtrl extends _$CategorieCtrl{
       var interactor=ref.watch(articleInteractorProvider);
       var res= await interactor.getCategorieListUseCase.run();
       print(res);
-    state=CategorieState(isLoading: false, data: res);
-
-
+      state=CategorieState(isLoading: false, data: res);
+      //test
   }
 
 }
