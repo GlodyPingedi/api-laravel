@@ -1,4 +1,4 @@
- import 'dart:convert';
+import 'dart:convert';
 
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_laravel/articles/business/model/categorie.dart';
@@ -23,7 +23,7 @@ class ArticleNetworkServiceImpl implements ArticlesNetworkService{
 
 void main() async {
  await dotenv.load(fileName: ".env");
-  var token="1|KE0ezAjUzFrRbvBVHvIl9VSshhiHPVtqqJKwHQhO738b167d";
+  var token="24|YigLecMC59VyIgi33lXTlP5G9QRmST4i30Nz0vaq8092003c";
   var serviceImpl=ArticleNetworkServiceImpl();
   var res= await serviceImpl.getListCategories(token);
   res.forEach((v){

@@ -10,7 +10,6 @@ class CategorieState{
   bool isLoading= false;
 
   CategorieState({this.data= const [], this.isLoading= false});
-
 }
 
 
